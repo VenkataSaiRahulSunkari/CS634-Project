@@ -1,10 +1,7 @@
 # Feature Engineering for the dataset
-def featEngg(fileLoc, training_df):
+def featEngg(df, training_df):
     # Import required libraries for the function
     import pandas as pd
-    
-    # Read the data from the csv file
-    df = pd.read_csv(fileLoc)
 
     # Drop columns that are not relevant to create the prediction model
     drop_columns = ['Unnamed: 0', 'cc_num', 'merchant', 'trans_num', 'unix_time', 'first', 'last', 'street', 'zip']
